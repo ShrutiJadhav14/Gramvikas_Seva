@@ -1,0 +1,71 @@
+/* programmes */
+.page-banner {
+    background: #37993a;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.programs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 60px 20px;
+}
+
+.program-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.img-text{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+.img-text img{
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.process {
+    background: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.process ul {
+    list-style: none;
+}
+
+.process li {
+    margin: 10px 0;
+}
+
+.cta {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta button {
+    padding: 12px 25px;
+    background: #ebb944;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.cta button:hover {
+    background: #e4b035;
+}
