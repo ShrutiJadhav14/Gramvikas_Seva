@@ -1,56 +1,113 @@
-/* gallary */
-/* Gallery Section */
+/* ================= GALLERY BANNER ================= */
+/* ================= GALLERY BANNER ================= */
+.page-banner {
+    background:
+        linear-gradient(
+            rgba(10, 107, 87, 0.85),
+            rgba(10, 107, 87, 0.85)
+        ),
+        url("https://images.unsplash.com/photo-1509099836639-18ba1795216d") center/cover no-repeat;
+
+
+    color: var(--white);
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 55vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.page-banner h1 {
+    font-size: clamp(2.3rem, 5vw, 3rem);
+    margin-bottom: 10px;
+}
+
+.page-banner p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: auto;
+    opacity: 0.95;
+}
+
+/* ================= GALLERY SECTION ================= */
 .gallery {
-    padding: 60px 20px;
-    background: #f9f9f9;
+    padding: 80px 20px;
+    background: var(--bg-light);
 }
 
 .gallery-grid {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
 }
 
+/* ================= GALLERY ITEM ================= */
 .gallery-grid img {
     width: 100%;
-    height: 220px;
+    height: 230px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 16px;
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 14px 32px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .gallery-grid img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transform: scale(1.06);
+    box-shadow: 0 22px 44px rgba(0,0,0,0.16);
 }
 
-.page-banner {
-    background: #37993a;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
-
+/* ================= CTA SECTION ================= */
 .cta {
-    background: #4CAF50;
-    color: white;
+    background: linear-gradient(
+        rgba(10, 107, 87, 0.95),
+        rgba(10, 107, 87, 0.95)
+    );
+    color: var(--white);
     text-align: center;
-    padding: 50px 20px;
+    padding: 90px 20px;
 }
 
+.cta h2 {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    margin-bottom: 15px;
+}
+
+.cta p {
+    font-size: 1.1rem;
+    max-width: 650px;
+    margin: auto;
+    opacity: 0.95;
+}
+
+/* CTA Button */
 .cta button {
-    padding: 12px 25px;
-    background: #ebb944;
-    color: white;
+    margin-top: 30px;
+    padding: 16px 40px;
+    background: var(--accent);
+    color: var(--primary-dark);
     border: none;
-    font-size: 16px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
-    margin-top: 20px;
+    transition: all 0.3s ease;
 }
 
 .cta button:hover {
-    background: #e4b035;
+    background: var(--accent);
+    transform: translateY(-3px);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .gallery-grid img {
+        height: 200px;
+    }
 }
