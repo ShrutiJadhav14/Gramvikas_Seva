@@ -4,19 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gramvikas Seva</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Home page -->
     <header>
-        <h1>Welcome to Gramvikas Seva</h1>
+        <div class="logo">
+            <img src="images/logo.jfif" alt="Gramvikas Seva Logo">
+        </div>
+
         <nav>
-            <ul>
-                <li><a href="#about">Programme</a></li>
-                <li><a href="#services">Gallary</a></li>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programmes.html">Programme</a></li>
+                <li><a href="gallary.html">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><button class="donate-btn">Donate</button></li>
             </ul>
-            <button onclick="">Donate</button>
-        </nav>
+        </nav>  
+    </header>
+
+    <!-- Slideshow Section -->
+    <div class="slideshow-container">
+
+        <div class="slide fade">
+            <img src="https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg" alt="Slide 1">
+        </div>
+
+        <div class="slide fade">
+            <img src="https://images.pexels.com/photos/6646877/pexels-photo-6646877.jpeg" alt="Slide 2">
+        </div>
+
+        <div class="slide fade">
+            <img src="https://images.pexels.com/photos/10629415/pexels-photo-10629415.jpeg" alt="Slide 3">
+        </div>
+
+        <!-- static text over img -->
+        <div class="slide-text">
+            <h2>Welcome to Gramvikas Seva</h2>
+            <p>Empowering Rural Communities for a Better Tomorrow</p>   
+        </div>
+
+        <!-- Dots -->
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+        <footer class="site-footer">
+            <div class="footer-container">
+
+                <div class="footer-section">
+                    <h3>Gramvikas Seva</h3>
+                    <p>
+                        Working towards sustainable rural development through
+                        education, healthcare, and empowerment initiatives.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programmes.html">Programme</a></li>
+                        <li><a href="gallary.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: gramvikasseva@gmail.com</p>
+                    <p>Phone: +91 98765 43210</p>
+                    <p>Pune, Maharashtra</p>
+                </div>
+
+            </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Gramvikas Seva. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>

@@ -1,13 +1,182 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 100%;
-    height: 100%;
 }
 
 html, body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    height: 100%;
 }
+
+header {
+    background-color: #4CAF50;
+    text-align: center;      /* CENTER EVERYTHING */
+    padding: 20px 0;
+}
+
+.logo img {
+    height: 70px;
+    margin-bottom: 15px;     /* SPACE BELOW LOGO */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    font-size: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.donate-btn {
+    padding: 8px 16px;
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.donate-btn:hover {
+    background-color: #f1f1f1;
+}
+
+.active{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    height: calc(100vh - 140px); /* header height */
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Slides */
+.slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.slide-text{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #f2f2f2;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Fade animation */
+.fade {
+    animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+/* Dots */
+.dots {
+    text-align: center;
+    padding: 15px;
+    background: #f4f4f4;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #4CAF50;
+}
+
+/* footer */
+.site-footer {
+    background-color: #2f2f2f;
+    color: #ddd;
+    padding-top: 40px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: #4CAF50;
+}
+
+.footer-bottom {
+    background-color: #222;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
